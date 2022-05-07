@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_liveVideoListMain"
+    android:layout_width="@dimen/dp_170"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="3dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:id="@+id/lin_homeLiveTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_cornor"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <com.github.siyamed.shapeimageview.RoundedImageView
+            android:id="@+id/img_roundCoirnor"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_150"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_launcher"
+            app:siBorderColor="@color/colorPrimary"
+            app:siBorderWidth="2dp"
+            app:siRadius="5dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/lin_checkoutDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="ANNABELLE"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:textSize="@dimen/txt_smallXXX" />
+
+                <TextView
+                    android:id="@+id/tv_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="ANNABELLIE LADIES"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_mediumX" />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="120CM FULL...."
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_mediumX" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="AED 51.00"
+                    android:textColor="@color/purple_700"
+                    android:singleLine="true"
+                    android:textSize="@dimen/txt_smallXX" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
